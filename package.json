@@ -1,0 +1,11 @@
+{
+  "name": "burton-poker",
+  "version": "1.0.0",
+  "description": "Poker Game",
+  "main": "./js/dealer.js",
+  "author": "Chris Burton",
+  "license": "ISC",
+  "dependencies": {
+    "pokersolver": "^2.1.4"
+  }
+}

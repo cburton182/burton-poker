@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./node_modules/pokersolver/pokersolver.js"></script>
+    <script type="module" src="./js/dealer.js"></script>
+    <!-- <script type="module" src="./js/script.js"></script> -->
+    <!-- <script type="module" src="./js/modules/deck.js"></script> -->
+    <title>burtonPoker Demo</title>
+  </head>
+  <body>
+    <div class="table green">
+      <!-- <div class="line"></div> -->
+      <div class="detail"><div class="dealer-btn">D</div></div>
+      <div class="community">
+        <!-- <div class="card red">
+            <h1>Q</h1>
+            <div class="suit heart"></div>
+            <h1>Q</h1>
+          </div>
+          <div class="card black">
+            <h1>7</h1>
+            <div class="suit club"></div>
+            <h1>7</h1>
+          </div>
+          <div class="card red">
+            <h1>9</h1>
+            <div class="suit diamond"></div>
+            <h1>9</h1>
+          </div>
+          <div class="card red">
+            <h1>A</h1>
+            <div class="suit heart"></div>
+            <h1>A</h1>
+          </div>
+          <div class="card red">
+            <h1>J</h1>
+            <div class="suit diamond"></div>
+            <h1>J</h1>
+          </div> -->
+      </div>
+      <div class="message pot hide">P: $0</div>
+      <div class="message bets hero-bet hide"></div>
+      <div class="message bets villain-bet hide">$100</div>
+      <div class="winner-container">
+        <div class="message player-action hide">Vilain checked</div>
+        <div class="message winner hide">Action is on villain</div>
+      </div>
+      <div class="message hero-stack hide">Stack</div>
+      <div class="message villain-stack hide">Stack</div>
+      <div class="message hand-description hide">Hand Strength</div>
+
+      <div class="hole-cards villain">
+        <!-- <div class="card">
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-back"></div>
+        </div> -->
+      </div>
+
+      <div class="hole-cards hero">
+        <!-- <div class="card red">
+          <h1>10</h1>
+          <div class="suit diamond"></div>
+          <h1>10</h1>
+        </div>
+        <div class="card red">
+          <h1>J</h1>
+          <div class="suit heart"></div>
+          <h1>J</h1> -->
+        </div>
+    </div>  
+  </div>
+
+  <div class="actions">
+    <button class="fold hide" data-can-check="no">Fold</button>
+    <button class="check hide" data-can-check="yes">Check</button>
+    <button class="call hide" data-can-check="no">Call 5</button>
+    <button class="raise hide" data-can-check="raise">Raise</button>
+    <input class="input hide" data-can-check="raise" type="number"  placeholder="20">
+  </div>
+
+  <div class="options">
+    <h5>Change felt color</h2>
+    <button class="btn" id="green"></button>
+    <button class="btn" id="blue"></button>
+    <button class="btn" id ="red"></button>
+  </div>
+  <button class="new-hand-btn hide">Deal</button>
+  <button class="new-hand-btn new-game">Loading...</button>
+  </body>
+</html>
